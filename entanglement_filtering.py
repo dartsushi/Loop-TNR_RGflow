@@ -103,7 +103,7 @@ def find_L(psi, pos, error_limit=1.0e-12, maxloop=50):
 ---T(n-1)--Rn---
 
 """
-def find_R(psi, pos, error_limit=1.0e-10, maxloop=50):
+def find_R(psi, pos, error_limit=1.0e-12, maxloop=50):
     old_R = np.identity(psi[pos-1].shape[2], dtype=complex)
     loop_counter = 0
     error = np.inf

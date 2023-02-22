@@ -22,9 +22,9 @@ i--A--k
 
 def SVD12(A, d_cut):
     shape = A.shape
-    chi = min(d_cut, shape[0]*shape[1])
     mat = A.reshape(shape[0]*shape[1],-1)
-    u,s,vh = np.linalg.svd(mat)
+    u,s,vh = np.linalg.svd(mat,full_matrices=True)
+    chi = min(d_cut, len(s))
     sq_s = np.diag(np.sqrt(s[:chi]))
     s1 = np.dot(u[:,:chi],sq_s).reshape(shape[0],shape[1],-1)
     s2 = np.dot(sq_s,vh[:chi,:]).reshape(-1,shape[2],shape[3])
