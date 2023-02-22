@@ -1,13 +1,14 @@
+import cmath
 import numpy as np
 import scipy as scipy
 import scipy.linalg as linalg
 from scipy.special import iv
-import cmath
 from scipy import integrate
 from scipy.special import eval_legendre
 from sympy.physics.wigner import wigner_3j,gaunt
 
-PI=cmath.pi
+PI=np.pi
+Ising_Tc = 2./np.log(1.+np.sqrt(2))
 """
 In this file, I define the local Boltzmann weight for the Ising, Potts, clock, XY, Heisenberg, and 
 RP^2 models. (I will update from time to time)
@@ -36,6 +37,22 @@ def initialize_Ising(T):
                     elif (i+j+k+l)==4:
                         Ising[i,j,k,l]=2*s*s
     return Ising
+
+def initialize_Ising_mag(T,h):
+    # Make initial tensor of square lattice Ising model at a temperature T
+    A =np.empty((2,2,2,2))
+    
+    for i in range(0,2):
+        si = (i - 0.5) * 2
+        for j in range(0,2):
+            sj = (j - 0.5) * 2
+            for k in range(0,2):
+                sk = (k - 0.5) * 2
+                for l in range(0,2):
+                    sl = (l - 0.5) * 2
+                    A[i,j,k,l] = np.exp((si*sj + sj*sk + sk*sl + sl*si)/T+h/2/T*(si+sj+sk+sl))
+                    
+    return A
 
     ####################   Potts PART   ####################
 def initialize_Potts(q,T):
