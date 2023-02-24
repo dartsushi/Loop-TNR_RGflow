@@ -50,8 +50,7 @@ def initialize_Ising_mag(T,h):
                 sk = (k - 0.5) * 2
                 for l in range(0,2):
                     sl = (l - 0.5) * 2
-                    A[i,j,k,l] = np.exp((si*sj + sj*sk + sk*sl + sl*si)/T+h/2/T*(si+sj+sk+sl))
-                    
+                    A[i,j,k,l] = np.exp((si*sj + sj*sk + sk*sl + sl*si)/T+h/2/T*(si+sj+sk+sl))                 
     return A
 
     ####################   Potts PART   ####################
