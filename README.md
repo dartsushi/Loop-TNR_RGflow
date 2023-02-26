@@ -5,6 +5,6 @@ These are demo codes that is related to my paper below.
 
 The original descriptions of Loop-TNR can be found in [Phys. Rev. Lett. 118, 110504](https://arxiv.org/abs/1512.04938).
  
-The validity of my cade is not guaranteed.
+The validity of my cades are not guaranteed. You may try other models by changing the initial tensors in "Initialization.py".
 
 You might to pip install sympy and ncon.
