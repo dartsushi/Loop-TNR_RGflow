@@ -1,7 +1,7 @@
 # Loop-TNR_rg
 These are demo codes that is related to my paper below.
 
-[Physical Review B 104 (16), 165132](https://arxiv.org/abs/2105.11460), [Physical Review E 106 (1), 014104](https://arxiv.org/abs/2202.07042), and [[Phys. Rev. B 108, 024413](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.024413)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.024413).
+[Physical Review B 104 (16), 165132](https://arxiv.org/abs/2105.11460), [Physical Review E 106 (1), 014104](https://arxiv.org/abs/2202.07042), and [Phys. Rev. B 108, 024413](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.024413).
 
 The original descriptions of Loop-TNR can be found in [Phys. Rev. Lett. 118, 110504](https://arxiv.org/abs/1512.04938).
  
