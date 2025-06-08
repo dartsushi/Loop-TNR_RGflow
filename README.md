@@ -8,3 +8,10 @@ The original descriptions of Loop-TNR can be found in [Phys. Rev. Lett. 118, 110
 The validity of my cades are not guaranteed. You may try other models by changing the initial tensors in "Initialization.py".
 
 You might need to pip install sympy and ncon.
+
+
+```diff
+- More recent algorithms are available in our new package [TNRKit](https://github.com/VictorVanthilt/TNRKit.jl)
+Please try it out!
+
+```
